@@ -23,6 +23,9 @@ for linha in linhas: # um for percorrendo e imprimindo todas as linhas lidas
     print (linha)
 
 '''
+import openpyxl
+
+
 arquivo1 = open("texto.txt", "a")
 frases=list()
 frases.append("Treinamento \n")
@@ -34,3 +37,6 @@ arquivo_lido = open("texto.txt", "r")
 linhas=arquivo_lido.readlines()
 print(linhas)
 arquivo1.close()
+
+install(openpyxl)
+from openpyxl import workbook
